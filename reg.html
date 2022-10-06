@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <form class="reg">
+    <fieldset>
+      <legend>Введите ваши данные</legend>
+      <label>
+        Имя
+        <input class="name" type="text" name="name" placeholder="Введите ваше имя" required maxlength="50" autocomplete="name">
+      </label>
+      <br>
+
+      <label>
+        Фамилия
+        <input class="surname" type="text" name="surname" placeholder="Введите вашу фаилию" maxlength="50">
+      </label>
+      <br>
+
+      <label>
+        Логин
+        <input class="login" type="text" name="login" placeholder="Введите логин" required maxlength="20" autocomplete="nickname">
+      </label>
+      <br>
+
+      <label>
+        Дата рождения
+        <input class="bday" type="date" min="1999/01/01" name="birthday" max="2008-10-05" required>
+      </label>
+      <br>
+
+      <label>
+        Пароль
+        <input class="psw1" type="password" name="password" placeholder="Введите пароль" required minlength="8" maxlength="50">
+        <input class="psw2" type="password" name="password-repeat" placeholder="Повторите пароль" required minlength="8" maxlength="50">
+      </label>
+      <br>
+    </fieldset>
+    <button>Зарегистрироваться</button>
+  </form>
+</body>
+</html>
